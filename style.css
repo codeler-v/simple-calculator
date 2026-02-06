@@ -1,0 +1,127 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(320deg,#10002b,#240046
+    ,#3c096c,#5a189a,#7b2cbf,#9d4edd,#c77dff,#e0aaff);
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+}
+
+.wrapper {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+   
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+
+    flex-basis: 400px;
+    height: 556px;
+    padding: 20px 35px;
+    color: #232323;
+
+    flex-grow: 0; 
+    margin-top: auto; 
+    margin-bottom: auto;
+} 
+
+.screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid  rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+   
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+#sub-screen{
+    font-size: 15px;
+}
+#screen{
+    font-size: 40px;
+}
+
+.button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+.calc-btn{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid  rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+.calc-btn:hover{
+    background-color: inherit;
+}
+.opr{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid  rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    /* background: #00f5d4; */
+    background: #7b2cbf;
+    color: #fff;
+}
+.calc-btn .opr:hover{
+    background-color: inherit;
+    color: inherit;
+}
+.double{
+    flex-basis: 47%;
+}
+
+.calc-btn:active{
+    background-color: #00d4ff;
+    transform: scale(0.95);
+}
+
+.calc-btn:active{
+    background-color: #00d4ff;
+    transform: scale(0.95);
+}
+
+footer{
+    display: flex;
+    background: #10002b;
+    color: #fff;
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
